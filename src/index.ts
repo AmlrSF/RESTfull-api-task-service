@@ -16,7 +16,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use("/api/addTask", taskRouter);
+app.use("/api/tasks", taskRouter);
 
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
