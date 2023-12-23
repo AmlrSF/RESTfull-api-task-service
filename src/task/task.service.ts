@@ -11,7 +11,7 @@ type Task = {
 
 //get all tasks
 export const getAllTasks = async (): Promise<Task[]> => {
-    return db.task.findMany({})
+    return db.task.findMany()
 }
 
 
@@ -86,7 +86,7 @@ export const deleteTask = async (id:number):Promise<void>=>{
 
 //delete all task
 export const deleteAllTasks = async():Promise<void>=>{
-    db.task.deleteMany({});
+    db.task.deleteMany();
 }
 
 
