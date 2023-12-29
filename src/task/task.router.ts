@@ -1,6 +1,9 @@
 import express from "express";
+
 import type { Request, Response } from "express";
+
 import * as TaskService from "./task.service";
+
 import { body, validationResult } from "express-validator";
 
 export const taskRouter = express.Router();
