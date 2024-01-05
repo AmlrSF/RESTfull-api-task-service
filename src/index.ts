@@ -1,6 +1,9 @@
 import * as dotenv from "dotenv";
+
 import express from "express";
+
 import cors from "cors";
+
 import { taskRouter } from "./task/task.router";
 
 dotenv.config();
